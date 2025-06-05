@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+            <link rel="stylesheet" href="style.css">    </link>
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <title style="font-weight: 700;"> Login </title>
+        <style>
+           *{
+            background-color:black;
+           }
+           .parent:hover,.input1:hover,#btn1:hover,#btn2:hover{
+            box-shadow: 0 0 20px greenyellow,0 0 30px greenyellow;
+            cursor: pointer;
+           }
+        .parent:hover{
+          transition-duration: 1s;
+         
+        }
+        .parenta:hover{
+          transition-duration: 1s;
+        }
+
+           .parenta:hover,.input1a:hover,#btn1a:hover,#btn2a:hover{
+            box-shadow: 0 0 20px rgb(112, 80, 255),0 0 30px rgb(112, 80, 255);
+            cursor: pointer;
+           }
+
+           .one{
+            display: flex;
+            justify-content: center;
+           }
+
+           .main{
+            display: flex;
+            justify-content: space-around;
+           }
+            
+            .parent{  
+                color:white; 
+                padding: 10px;
+                border: 2px;
+                border-style: solid;
+                width: 350px;
+                height: 300px;
+                border-radius: 50px;
+                box-shadow:  0 0 20px lightblue,0 0 30px lightblue,0 0 40px lightblue;
+                margin-top: 30%;
+            }  
+            .parenta{  
+                color:white; 
+                padding: 10px;
+                border: 2px;
+                border-style: solid;
+                width: 350px;
+                height: 300px;
+                border-radius: 50px;
+                box-shadow:  0 0 20px lightblue,0 0 30px lightblue,0 0 40px lightblue;
+                margin-top: 30%;
+            }  
+            
+           .input1{ 
+            padding: 5px;
+            color: white;
+            width: 200px; 
+           }
+           .input1a{ 
+            padding: 5px;
+            color: white;
+            width: 200px; 
+           }
+           
+            .h4{  color: yellowgreen;
+                display: flex;
+                justify-content: center;
+            }
+            .h4a{  color: red;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .child2{
+                padding: 7px;
+                display: flex;
+                margin-left: 40px;
+                width: fit-content;
+                height: fit-content;
+            }
+            .child2a{
+                padding: 7px;
+                display: flex;
+                margin-left: 40px;
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .child3{
+                padding: 7px;
+                display: flex;
+                margin-left: 16px;
+                margin-top: 30px; 
+            }
+            .child3a{
+                padding: 7px;
+                display: flex;
+                margin-left: 16px;
+                margin-top: 30px; 
+            }
+
+            button{
+                background-color: whitesmoke;
+                width: 100px;
+                height: 35px;
+                top: 50px;
+                margin-left: 50px;
+                font-weight: bold;                
+            }
+            
+
+            .button{
+               color: black;
+               margin-top: 30px;  
+            }
+            .buttona{
+               color: black;
+               margin-top: 30px;  
+            }
+                
+        </style>
+  </head>
+
+  <body>
+                     <h1 class="one" style="color: white;">WELCOME</h1>
+                    
+<div class="main">
+  <form action="emp.html"  class="grandf">
+
+    <div class="parent">  <h4 class="h4">EMPLOYEE Log-in</h4> 
+            
+             <div class="child2">  
+                <label for="name">Name: </label>  
+                <input name="name" id="name" type="text" class="input1" placeholder="">
+            </div>
+
+            <div class="child3">  
+                 <label for="pass" type="">Password: </label>  
+                 <input name="pass" type="password" id="pass" class="input1" placeholder="" maxlength="8" type=" " required >
+           </div>
+
+          <div class="button"  >
+             <button  type="reset" id="btn1" onclick="update()" >Reset</button>
+             <button  type="submit" id="btn2" onclick="update1()">Login</button>     
+          </div>   
+
+    </div>
+</form> 
+
+<form action="admin.html"  class="grandfa">
+
+  <div class="parenta">  <h4 class="h4a" >ADMIN Log-in</h4> 
+          
+           <div class="child2a">  
+              <label for="namea">Name: </label>  
+              <input name="namea" id="namea" type="text" class="input1a" placeholder="">
+          </div>
+
+          <div class="child3a">  
+               <label for="passa" type="">Password: </label>  
+               <input name="passa" type="passworda" id="passa" class="input1a" placeholder="" maxlength="8" type=" " required >
+         </div>
+
+        <div class="buttona"  >
+           <button  type="reset" id="btn1a" onclick="update()" >Reset</button>
+           <button  type="submit" id="btn2a" onclick="update1()">Login</button>     
+        </div>   
+
+  </div>
+</form> 
+
+</div>
+
+  </body>        
+ 
+</html>
